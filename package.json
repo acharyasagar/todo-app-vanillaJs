@@ -5,5 +5,8 @@
   "main": "index.js",
   "repository": "https://github.com/acharyasagar/todo-app-vanillaJs.git",
   "author": "Sagar Acharya",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "materialize-css": "^0.100.2"
+  }
 }
