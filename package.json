@@ -1,0 +1,9 @@
+{
+  "name": "todo",
+  "version": "1.0.0",
+  "description": "Simple Todo App with plain JavaScript",
+  "main": "index.js",
+  "repository": "https://github.com/acharyasagar/todo-app-vanillaJs.git",
+  "author": "Sagar Acharya",
+  "license": "MIT"
+}
