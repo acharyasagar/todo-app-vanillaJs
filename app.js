@@ -17,6 +17,8 @@ function loadEventListeners(){
   taskList.addEventListener('click', removeTask);
   //Add event to clear task button
   clearBtn.addEventListener('click', clearTasks);
+  //Filter tas event Listener
+  filter.addEventListener('keyup', filterTasks);
 }
 
 function addTask(e){
@@ -66,14 +68,28 @@ function removeTask(e){
 
 function clearTasks(e){
   if(confirm('Are you sure you want to clear all tasks?')){
-
       //taskList.innerHTML = ''; -- one way
-
       //removing child using while loop
-
       while(taskList.firstChild){
         taskList.removeChild(taskList.firstChild);
       }
-
   }
+}
+
+//FilterTasks Function
+
+function filterTasks(e){
+
+  //gets the search string and converts it into lowercase
+  const text = e.target.value.toLowerCase();
+
+  //forEach loops through all text nodes returned by queryselector
+  document.querySelectorAll('.collection-item').forEach(function(task){
+    // gets the text content of the li item and converts it into lowercase and matches the index of search string
+    if(task.firstChild.textContent.toLowerCase().indexOf(text)!= -1){
+      task.style.display = 'block';
+    } else {
+      task.style.display = 'none';
+    }
+  });
 }
