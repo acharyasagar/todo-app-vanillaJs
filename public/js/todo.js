@@ -44,9 +44,9 @@ function addTask(e){
     //Create new link element
     const link = document.createElement('a');
     //Add class to the link element
-    link.className='delete-item secondary-content scale-transition scale-out';
+    link.className='delete-item secondary-content';
     //Add icon to the link
-    link.innerHTML= '<i class="fa fa-trash"></i>';
+    link.innerHTML= '<i class="small material-icons">delete_forever</i>';
     //Now append the link to the li
     li.appendChild(link);
     //Append the li to ul
@@ -143,9 +143,9 @@ function pullTasks(){
     //Create new link element
     const link = document.createElement('a');
     //Add class to the link element
-    link.className='delete-item secondary-content scale-transition scale-out';
+    link.className='delete-item secondary-content';
     //Add icon to the link
-    link.innerHTML= '<i class="fa fa-trash"></i>';
+    link.innerHTML= '<i class="small material-icons">delete_forever</i>';
     //Now append the link to the li
     li.appendChild(link);
     //Append the li to ul

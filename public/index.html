@@ -5,18 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="theme-color" content="#49c088">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Todo">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/todo-icon-192x192.png">
   <link rel="icon" href="/images/favicon.png">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="manifest" href="manifest.json">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-  <title>todo</title>
+  <title>Todo</title>
 </head>
 <body>
   <div class="container" style="margin: 50px auto;">
     <div class="row">
       <div class="col s2">
-        <img src="/images/todo192.png" alt="" class="circle responsive-img" style="width: 80px; height:80px;"> <!-- notice the "circle" class -->
+        <img src="/images/todo-icon-192x192.png" alt="" class="circle responsive-img" style="width: 80px; height:80px;"> <!-- notice the "circle" class -->
       </div>
       <h3 class="col s10">Manage your tasks</h1>
     </div>
@@ -29,7 +32,10 @@
               <form id="task-form">
                 <div class="input-field col s12">
                   <input type="text" name='task' id ='task' >
-                  <label for="task">New Task</label>
+                  <label for="task">
+                      <i class="tiny material-icons" style="margin-right: 16px;">add_circle_outline</i>
+                      New Task
+                  </label>
                 </div>
                 <input type="submit" value="Add Task" class="btn">
               </form>
@@ -39,7 +45,10 @@
             <h5 id ='task-title'>Tasks</h5>
             <div class="input-field col s12">
               <input type="text" name='filter' id ='filter' >
-              <label for="filter">Filter Tasks</label>
+              <label for="task">
+                <i class="tiny material-icons" style="margin-right: 16px;">filter_list</i>
+                Filter Tasks
+              </label>
             </div>
             <ul class="collection">
 

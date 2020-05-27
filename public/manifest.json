@@ -4,12 +4,12 @@
   "description": "Todo task management",
   "icons": [
     {
-      "src": "/images/todo192.png",
+      "src": "/images/todo-icon-192x192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/images/todo512.png",
+      "src": "/images/todo-icon-512x512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
