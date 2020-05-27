@@ -1,0 +1,23 @@
+{
+  "short_name": "Todo",
+  "name": "Todo: manage your tasks",
+  "description": "Todo task management",
+  "icons": [
+    {
+      "src": "/images/todo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/images/todo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/index.html",
+  "background_color": "#fff",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#49c088",
+  "orientation": "portrait-primary"
+}
