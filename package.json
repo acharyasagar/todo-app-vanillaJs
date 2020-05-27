@@ -3,10 +3,22 @@
   "version": "1.0.0",
   "description": "Simple Todo App with plain JavaScript",
   "main": "index.js",
-  "repository": "https://github.com/acharyasagar/todo-app-vanillaJs.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acharyasagar/todo-app-vanillaJs.git"
+  },
   "author": "Sagar Acharya",
   "license": "MIT",
   "dependencies": {
+    "express": "^4.17.1",
     "materialize-css": "^0.100.2"
-  }
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "bugs": {
+    "url": "https://github.com/acharyasagar/todo-app-vanillaJs/issues"
+  },
+  "homepage": "https://github.com/acharyasagar/todo-app-vanillaJs#readme",
+  "keywords": []
 }
